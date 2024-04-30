@@ -123,7 +123,7 @@ p{font-size: 18;line-height: 1.4;}
 .b { margin: 0 30% 50px 30%; background: whitesmoke; }
 
 
-@media (max-width: 768px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
+@media (max-width: 960px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
     body {
         overflow-x: hidden;
     }
@@ -212,7 +212,7 @@ p{font-size: 18;line-height: 1.4;}
     box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .hero {
         padding: 20% 10%; /* Riduci il padding */
     }
@@ -276,7 +276,7 @@ p{font-size: 18;line-height: 1.4;}
     color: #666;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .code__carousel {
         flex-direction: column; /* Cambia la direzione del carosello in verticale */
         align-items: center; /* Centra le slide verticalmente */
@@ -370,7 +370,7 @@ p{font-size: 18;line-height: 1.4;}
 }
 
 
-@media (max-width:768px){
+@media (max-width:960px){
     .mantenimento{
         padding: 4% 3%;
         width: 50%; /* Larghezza fissa */
@@ -423,7 +423,7 @@ p{font-size: 18;line-height: 1.4;}
 
 
 
-@media (max-width:768px){
+@media (max-width:960px){
     .section__container{
        margin-top: 0;
        margin-left: 10px;
@@ -637,7 +637,7 @@ form {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .footer-content {
         flex-direction: column; /* Impila gli elementi verticalmente */
         gap: 20px; /* Spazio tra gli elementi */

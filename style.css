@@ -124,7 +124,7 @@ p{font-size: 18;line-height: 1.4;}
 .b { margin: 0 30% 50px 30%; background: whitesmoke; }
 
 
-@media (max-width: 768px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
+@media (max-width: 960px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
     body {
         overflow-x: hidden;
     }
@@ -257,7 +257,7 @@ h2 {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .why-website{
         height: 500px;
     }
@@ -363,7 +363,7 @@ h2 {
 
 
 /* Aggiungi animazione per far scorrere le statistiche solo su dispositivi mobili */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .stats__container {
         display: flex;
         flex-direction: column; /* Impila le statistiche verticalmente */
@@ -430,7 +430,7 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .business{
         height: 400px;
     }
@@ -531,7 +531,7 @@ h2 {
     border-radius: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .proj{
         margin: 0;
         margin-bottom: 20%;
@@ -621,7 +621,7 @@ h2 {
     color: white;
 }
 
-@media (max-width: 768px){
+@media (max-width: 960px){
     .faq{
         border-left: 5px solid purple;
     border-right: 5px solid purple;
@@ -654,7 +654,7 @@ h2 {
     padding: 4px;}
 
 /*Utilities*/
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     /*.hero{flex-wrap: wrap;} /*lo faccio andare a capo*/
     .hero__text{width: 100%; margin-bottom: 40px;} 
 }
@@ -711,7 +711,7 @@ h2 {
 
 .a_capo{flex-wrap: wrap;}
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .col50,
     .col40,
     .col60,
@@ -944,7 +944,7 @@ h2 {
 
 
 /* CSS per il footer su dispositivi mobili */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .footer-content {
         flex-direction: column; /* Impila gli elementi verticalmente */
         gap: 20px; /* Spazio tra gli elementi */

@@ -129,7 +129,7 @@ p{font-size: 18;line-height: 1.4;}
 .b { margin: 0 30% 50px 30%; background: whitesmoke; }
 
 
-@media (max-width: 768px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
+@media (max-width: 960px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
     body {
         overflow-x: hidden;
     }
@@ -231,7 +231,7 @@ p{font-size: 18;line-height: 1.4;}
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:960px) {
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -255,7 +255,7 @@ p{font-size: 18;line-height: 1.4;}
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
     .main__content h1 {
         font-size: 2rem;
         margin-top: 3rem;
@@ -607,7 +607,7 @@ p{font-size: 18;line-height: 1.4;}
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .main__content h1 {
         font-size: 1.8rem; /* Riduci ulteriormente la dimensione del titolo principale */
         margin-top: -250px; /* Sposta l'h1 verso l'alto di 30px (aggiusta il valore secondo necessità) */
@@ -618,7 +618,7 @@ p{font-size: 18;line-height: 1.4;}
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
     .main__content h1 {
         font-size: 1.5rem; /* Riduci ulteriormente la dimensione del titolo principale */
     }
@@ -626,7 +626,7 @@ p{font-size: 18;line-height: 1.4;}
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .site-footer {
         padding: 20px 0; /* Riduci il padding superiore e inferiore */
     }
