@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--per internet exp-->
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header"> 
+            <img src="/home/mattia/Scaricati/logo.png" alt="Descrizione dell'immagine" class="logo"> 
+            <nav class="menu"> <!--navigazione-->
+                <ul> <!--lista con i puntini-->
+                    <li><a href="corso.html" class="menu__a">Home</a></li> 
+                    <li><a href="servizi.html" class="menu__a">Servizi</a></li>
+                    <li><a href="about.html" class="menu__a">Chi Siamo</a></li>
+    
+                </ul>
+            </nav>
+            <a href="servizi.html#contatti" class="button">Contatti</a>
+    
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        </div>
+    <div class="presentazione">
+        <div class="presentazione__text">
+            <h1>Siamo un team giovane che studia e si applica per qualsiasi vostra esigenza</h1>
+            <p class="uno button">Ecco una presentazione del team:</p>
+        </div>
+    </div>
+    <div class="grid text-center ">
+        <div class="col25 border sx">
+          <h3 class="color-1"> Samuele </h3>
+          <p class="a_capo">descrizione
+            aaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaa
+          </p>
+        </div>
+        <div class="col25 border">
+           <h3 class="color-3"> Mattia</h3>
+           <p class="a_capo">descrizione
+            aaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaa
+           </p>
+        </div>
+        <div class="col25 border">
+           <h3 class="color-4"> Christian </h3>
+           <p  class="a_capo">descrizione
+            aaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaa
+           </p>
+        </div>
+      </div>
+    <div class="inizio">
+        <h2 class="inizio__text">Perchè abbiamo deciso di iniziare questo progetto della SMC Dynamics</h2>
+        <h3>Perchè bla bla bla bla bla
+            bla bla bla
+            bla bla bla
+        </h3>
+    </div>
+    
+    <div class="reviews__container">
+        <h3 class="reviews__title color-2 backcolor4">Le nostre recensioni</h3>
+        <div class="reviews">
+            <div class="review" data-active="false">
+                <h3>Recensione 1</h3>
+                <div class="stars">★★★★★</div>
+                <p>Descrizione della recensione 1.</p>
+                <a href="#">Link alla recensione 1</a>
+            </div>
+            <div class="review" data-active="true">
+                <h3>Recensione 2</h3>
+                <div class="stars">★★★☆☆</div>
+                <p>Descrizione della recensione 2.</p>
+                <a href="#">Link alla recensione 2</a>
+            </div>
+            <div class="review" data-active="false">
+                <h3>Recensione 3</h3>
+                <div class="stars">★★★★☆</div>
+                <p>Descrizione della recensione 3.</p>
+                <a href="#">Link alla recensione 3</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    <div class="contact">
+        <p>Cosa aspetti? Clicca qua sotto </p>
+        <a href="contatti.html" class="button">Contattaci</a>
+    </div>
+    <script> 
+        let item = document.querySelector('.hamburger'); //seleziona elementi dell'htlm
+        item.addEventListener("click", function() { //javascript ascolta quando click e  
+          document.body.classList.toggle('open'); // esegue quando si clicca
+        });
+
+
+        let reviews = document.querySelectorAll('.review');
+        let currentIndex = 1; // Indice iniziale della recensione attiva
+
+        setInterval(() => {
+            // Imposta tutte le recensioni come non attive
+            reviews.forEach(review => {
+                review.setAttribute('data-active', 'false');
+            });
+
+            // Aggiorna l'indice della recensione attiva
+            currentIndex = (currentIndex + 1) % reviews.length;
+            reviews[currentIndex].setAttribute('data-active', 'true');
+        }, 5000); // Cambia ogni 3000 millisecondi (3 secondi)
+
+
+
+           
+    const header = document.querySelector('.header');
+    const menuAs = document.querySelectorAll('.menu__a'); // Seleziona tutti gli elementi con classe menu__a
+
+    window.addEventListener('scroll', () => {
+    // Verifica la posizione dello scroll rispetto al top della finestra
+    if (window.scrollY > 0) {
+        // Se lo scroll è verso il basso, aggiungi la classe 'scrolled' all'header
+        header.classList.add('scrolled');
+        // Aggiungi la classe 'scrolled' a ciascun elemento del menu
+        menuAs.forEach(menuA => {
+            menuA.classList.add('scrolled');
+        });
+    } else {
+        // Se lo scroll è verso l'alto e non c'è scroll, rimuovi la classe 'scrolled' dall'header
+        header.classList.remove('scrolled');
+        // Rimuovi la classe 'scrolled' da ciascun elemento del menu
+        menuAs.forEach(menuA => {
+            menuA.classList.remove('scrolled');
+        });
+    }
+});
+
+    </script>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Azienda</h4>
+            <ul>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Lavora con noi</a></li>
+                <li><a href="#">Innovazione</a></li>
+                <li><a href="#">Notizie</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Supporto</h4>
+            <ul>
+                <li><a href="#">Centro assistenza</a></li>
+                <li><a href="#">Contatti</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+            </ul>
+        </div>
+<div class="footer-section">
+    <h4>Social Media</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Iscriviti alla nostra Newsletter</h4>
+            <form action="#" method="post">
+                <input type="email" placeholder="Inserisci il tuo email" required>
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 SMC Dynamics. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+    
+</body>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--per internet exp-->
+    <title>Contattaci | SMC Dynamics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_contatti.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-12dSjqn9HXtjbdDjzYNmuK7reihMFXEIkW+xlD4nZ/ULRvZHTzwOqC1Nk4yGfl8IQ8S9PdPJTsdZajX11UIXxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-<tuo_hash>" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header"> 
+            <a href="" id="navbar__logo">              <!-- da mettere il main home-->
+                <div class="nav__img--container">
+                    <img src="Images/logo_def_nob.png" alt="pic" id="nav__img">    <!-- immagine -->
+                </div>
+                <div class="nav__text">SMC Dynamics</div>
+                
+            </a>
+            <nav class="menu"> <!--navigazione-->
+                <ul> <!--lista con i puntini-->
+                    <li><a href="index.html" class="menu__a">Home</a></li> 
+                    <li><a href="servizi.html" class="menu__a">Servizi</a></li>
+                    <li><a href="who.html" class="menu__a">Chi Siamo</a></li>
+                    <li><a href="contatti.html" class="menu__a">Contatti</a></li>
+                </ul>
+            </nav>
+            <a href="index.html#preventivo" class="button">Preventivo</a>
+    
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        </div>
+    <div class="hero__container">
+        <div class="hero">
+            <div class="hero__text">Contattaci ora</div>
+            <p class="p__hero">Risponderemo al più presto</p>
+        </div>
+    </div>
+
+    <div id="contatti"></div>
+    <div class="altro__container">
+        <div class="altro">
+            <h3>Lascia la tua email con descrizione e verrai contattato</h3>
+            <p>Descrivici che attività hai e come vorresti venisse progettato il sito</p>
+        </div>
+        <form action="/submit_form" method="post">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="description">Descrizione:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+        
+            <input type="submit" value="Invia">
+        </form>
+    </div>
+
+    <div class="spz"></div>
+
+    <div id="trigger" style="height: 1px;"></div>
+
+    <div class="call-container" id="callContainer">
+        <h2 class="call-title">Oppure preferisci un contatto diretto?</h2>
+        <button class="call-button" onclick="callUs()">Chiamaci ora</button>
+        <p>Dal Lunedi al Venerdi 14-19</p>
+    </div>
+
+
+</body>
+<script>
+    let item = document.querySelector('.hamburger'); //seleziona elementi dell'htlm
+    item.addEventListener("click", function() { //javascript ascolta quando click e  
+      document.body.classList.toggle('open'); // esegue quando si clicca
+    });
+    function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Funzione per gestire l'animazione quando l'elemento diventa visibile
+        function handleVisibility() {
+            var container = document.getElementById('callContainer');
+            var trigger = document.getElementById('trigger');
+
+            if (isElementInViewport(trigger)) {
+                container.classList.add('show');
+                window.removeEventListener('scroll', handleVisibility); // Rimuovi l'ascoltatore degli eventi dopo che l'animazione è stata attivata
+            }
+        }
+
+        // Ascolta l'evento di scroll per controllare quando l'elemento diventa visibile
+        window.addEventListener('scroll', handleVisibility);
+
+
+     function callUs() {
+            // Sostituisci "1234567890" con il numero di telefono desiderato
+            window.location.href = "tel:+1234567890";
+        }
+
+     const header = document.querySelector('.header');
+    const menuAs = document.querySelectorAll('.menu__a'); // Seleziona tutti gli elementi con classe menu__a
+
+    window.addEventListener('scroll', () => {
+    // Verifica la posizione dello scroll rispetto al top della finestra
+    if (window.scrollY > 0) {
+        // Se lo scroll è verso il basso, aggiungi la classe 'scrolled' all'header
+        header.classList.add('scrolled');
+        // Aggiungi la classe 'scrolled' a ciascun elemento del menu
+        menuAs.forEach(menuA => {
+            menuA.classList.add('scrolled');
+        });
+    } else {
+        // Se lo scroll è verso l'alto e non c'è scroll, rimuovi la classe 'scrolled' dall'header
+        header.classList.remove('scrolled');
+        // Rimuovi la classe 'scrolled' da ciascun elemento del menu
+        menuAs.forEach(menuA => {
+            menuA.classList.remove('scrolled');
+        });
+    }
+});
+</script>
+</head>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Azienda</h4>
+            <ul>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Lavora con noi</a></li>
+                <li><a href="#">Innovazione</a></li>
+                <li><a href="#">Notizie</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Supporto</h4>
+            <ul>
+                <li><a href="#">Centro assistenza</a></li>
+                <li><a href="#">Contatti</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+            </ul>
+        </div>
+<div class="footer-section">
+    <h4>Social Media</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Iscriviti alla nostra Newsletter</h4>
+            <form action="#" method="post">
+                <input type="email" placeholder="Inserisci il tuo email" required>
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 SMC Dynamics. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+</html>
