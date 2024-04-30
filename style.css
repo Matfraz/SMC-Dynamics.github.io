@@ -549,7 +549,7 @@ h2 {
     .prev-btn,
     .next-btn {
         margin: 0; /* Centra le frecce orizzontalmente */
-        margin: 0;
+        padding: 0;
     }
 
     .proj__descr {
