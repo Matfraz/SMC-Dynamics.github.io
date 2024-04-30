@@ -189,7 +189,7 @@ p{font-size: 18;line-height: 1.4;}
     display: flex;
     justify-content: center; /* Centra il contenuto orizzontalmente */
     align-items: center; /* Centra il contenuto verticalmente */
-    background-image: url("Images/foto25.jpg");
+    background-image: url("foto25.jpg");
     background-size: cover; /* Copre l'intera area */
     background-position: center; /* Centra l'immagine */
     padding: 12% 10%;
@@ -291,7 +291,7 @@ p{font-size: 18;line-height: 1.4;}
 
 
 .mantenimento__container{
-    background-image: url("Images/foto26.jpg");
+    background-image: url("foto26.jpg");
     padding: 5% 0 3% 0;
     margin: 7% 0 0 0;
     align-items: center;

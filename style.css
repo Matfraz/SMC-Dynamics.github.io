@@ -185,7 +185,7 @@ p{font-size: 18;line-height: 1.4;}
     }
 }
 
-.hero{display: flex; padding: 12% 10% 14% 10%; margin-top: 0px; margin-bottom: 0px; background-image: url("Images/foto20.jpg");}
+.hero{display: flex; padding: 12% 10% 14% 10%; margin-top: 0px; margin-bottom: 0px; background-image: url("foto20.jpg");}
 .hero__text{width: 58%; padding: 3% 0px; }
 .hero__img{width: 450px; height: auto; margin-top: 15px; margin-left: 50px;}
 
