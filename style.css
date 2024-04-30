@@ -445,6 +445,10 @@ h2 {
         width: 100%; /* Imposta la larghezza al 100% per riempire completamente il contenitore */
         margin: 10px 0; /* Aggiungi uno spazio tra le opzioni */
     }
+    .business__option:hover {
+        transform: scale(1.05); /* Ingrandisce leggermente al passaggio del mouse */
+        background: purple ;
+    }
 }
 
 
