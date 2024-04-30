@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Nasconde il loader dopo un certo ritardo
+    setTimeout(function() {
+      document.getElementById("loader-container").style.display = "none";
+      document.body.style.visibility = "visible";
+    }, 1000); // Ritardo di 1000 millisecondi (1 secondo)
+  });
+
+
+
+
 const header = document.querySelector('.header');
 const menuAs = document.querySelectorAll('.menu__a'); // Seleziona tutti gli elementi con classe menu__a
 

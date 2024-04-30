@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-12dSjqn9HXtjbdDjzYNmuK7reihMFXEIkW+xlD4nZ/ULRvZHTzwOqC1Nk4yGfl8IQ8S9PdPJTsdZajX11UIXxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-<tuo_hash>" crossorigin="anonymous"></script>
 
+        <div id="loader-container">
+            <img src="logo_def_nob.png" alt="Logo">
+            <div class="load__text">SMC Dynamics</div>
+        </div>
 </head>
-<body>
+<body id="body">
     <div class="container">
         <header class="header"> 
             <a href="" id="navbar__logo">              <!-- da mettere il main home-->
@@ -174,6 +178,14 @@
     
     
     <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Nasconde il loader dopo un certo ritardo
+  setTimeout(function() {
+    document.getElementById("loader-container").style.display = "none";
+    document.body.style.visibility = "visible";
+  }, 1000); // Ritardo di 1000 millisecondi (1 secondo)
+});
 
 let item = document.querySelector('.hamburger'); //seleziona elementi dell'htlm
     item.addEventListener("click", function() { //javascript ascolta quando click e  

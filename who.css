@@ -5,6 +5,55 @@
     font-family: 'Rubik','Kumbh Sans', sans-serif;
 }
 
+
+body{background: whitesmoke; z-index: 1; visibility: hidden;}
+
+
+.load__text{
+    background-color: #c31641;
+    background-image: linear-gradient(
+        to right,
+         darkblue 0%, 
+         darkblue 21%,
+         #550d5f 38%,
+         #550d5f 78%,
+         #550d5f 100%
+    );
+    background-size: 100%;
+    font-size: 23px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Righteous";
+    font-weight: bold;
+}
+
+#loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+  }
+  
+  #loader-container img {
+    width: 60px; /* Regola le dimensioni del logo */
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+  }
+  
+  
+
+
 .container {
     margin: 0 auto; /* Centra il contenitore */
     overflow:hidden;

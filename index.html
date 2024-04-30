@@ -12,9 +12,13 @@
     <style>
     
     </style>
-
+<div id="loader-container">
+    <img src="logo_def_nob.png" alt="Logo">
+    <div class="load__text">SMC Dynamics</div>
+</div>
 </head>
-<body>
+<body id="body">
+    
     <div class="container">
     <header class="header"> 
         <a href="" id="navbar__logo">              <!-- da mettere il main home-->
@@ -242,6 +246,17 @@
 
 
 <script> 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Nasconde il loader dopo un certo ritardo
+  setTimeout(function() {
+    document.getElementById("loader-container").style.display = "none";
+    document.body.style.visibility = "visible";
+  }, 1000); // Ritardo di 1000 millisecondi (1 secondo)
+});
+
+
     let item = document.querySelector('.hamburger'); //seleziona elementi dell'htlm
     item.addEventListener("click", function() { //javascript ascolta quando click e  
       document.body.classList.toggle('open'); // esegue quando si clicca
