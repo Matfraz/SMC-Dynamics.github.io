@@ -131,7 +131,7 @@ p{font-size: 18;line-height: 1.4;}
     .header{padding-left: 20px; padding-right: 80px; position: relative;background: white;} /**/
     .menu li{width: 100%;} /*per fargli occupare lo spz bene*/
     .menu {
-        background: white;
+        background:purple;
         position: fixed; /* Cambiato da absolute a fixed */
         top: 0;
         right: -100%;

@@ -258,6 +258,9 @@ h2 {
 
 
 @media (max-width: 768px) {
+    .why-website{
+        height: 450px;
+    }
     .reasons {
         flex-direction: column;
         align-items: center;
@@ -366,6 +369,9 @@ h2 {
         gap: 20px; /* Spazio tra le statistiche */
         align-items: center;
     }
+    .stats{
+        height: 400px;
+    }
     
     .stat {
         max-width: 80%;
@@ -424,6 +430,9 @@ h2 {
 
 
 @media (max-width: 768px) {
+    .business{
+        height: 400px;
+    }
     .business__options {
         display: flex;
         flex-direction: column; /* Impila le opzioni in colonna anziché in riga */
