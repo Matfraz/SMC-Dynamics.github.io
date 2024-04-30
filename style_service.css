@@ -123,7 +123,7 @@ p{font-size: 18;line-height: 1.4;}
 .b { margin: 0 30% 50px 30%; background: whitesmoke; }
 
 
-@media (max-width: 960px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
+@media (max-width: 1180px) { /*solo fino a 768 pixel di grandezza del dispositivo quindi sui telefoni*/
     body {
         overflow-x: hidden;
     }
