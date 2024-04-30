@@ -260,6 +260,7 @@ h2 {
 @media (max-width: 768px) {
     .why-website{
         height: 450px;
+        margin-bottom: 30px;
     }
     .reasons {
         flex-direction: column;
@@ -456,11 +457,11 @@ h2 {
     text-align: center;
     border-bottom: 0.5px solid #666666;
 }
-
 .projects {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Consente ai progetti di passare alla riga successiva se non ci sono spazi sufficienti */
     margin-top: 5%;
 }
 
@@ -472,9 +473,13 @@ h2 {
 }
 
 .project {
-    display: none; /* Nascondi tutti i progetti all'inizio */
-    margin-right: 6%;
+    display: none;
+    align-items: center;
+    width: 70%; /* Imposta la larghezza dei progetti su dispositivi mobili */
+    max-width: 300px; /* Limita la larghezza massima dei progetti */
+    margin-right: 12%;
 }
+
 
 .project.active {
     display: block; /* Mostra solo il progetto attivo */
@@ -523,20 +528,27 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    .proj{
+        margin: 0;
+    }
     .projects {
         flex-direction: column; /* Impila i progetti uno sopra l'altro */
         margin-top: 10%; /* Aggiunge spazio in cima ai progetti */
     }
 
     .project {
+        align-items: center;
+        text-align: center;
         display: block; /* Mostra i progetti come blocchi */
-        margin-right: 12%; /* Rimuove il margine destro per centrarli correttamente */
-        margin-bottom: 5%; /* Aggiunge spazio tra i progetti */
+        margin-right:0 ;
+        width: 80%;
+        margin-right: 12%;  Rimuove il margine destro per centrarli correttamente */
+        margin-bottom: 5%;  Aggiunge spazio tra i progetti */
     }
 
     .prev-btn,
     .next-btn {
-        margin: auto auto; /* Centra le frecce orizzontalmente */
+        margin: 0; /* Centra le frecce orizzontalmente */
     }
 
     .proj__descr {

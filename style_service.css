@@ -139,7 +139,10 @@ p{font-size: 18;line-height: 1.4;}
         height: 100vh;
         transition: all 1s cubic-bezier(.215, .61, .355, 1);
     }
-    
+    .menu__a{
+        color: purple;
+    }
+
     .open .menu {
         right: 0;
     }
@@ -219,7 +222,7 @@ p{font-size: 18;line-height: 1.4;}
         padding: 3% 5%; /* Riduci ulteriormente il padding */
     }
     .h1__hero{
-        font-size: 47px;
+        font-size: 40px;
     }
 }
 
