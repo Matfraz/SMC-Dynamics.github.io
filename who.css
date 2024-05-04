@@ -280,7 +280,7 @@ p{font-size: 18;line-height: 1.4;}
 
 /* Mobile Responsive */
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:720px) {
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -296,18 +296,18 @@ p{font-size: 18;line-height: 1.4;}
         margin-bottom: 4rem;
     }
 
-    .main__content h1 {
+    /*.main__content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
-    }
+    }*/
 
 }
 
 
-@media screen and (max-width: 960px) {
-    .main__content h1 {
+@media screen and (max-width: 1300px) {
+    .main__content {
         font-size: 2rem;
-        margin-top: 3rem;
+        margin-top: 10rem;
     }
 
 }

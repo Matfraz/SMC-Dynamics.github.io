@@ -417,7 +417,7 @@ h2 {
         align-items: center;
     }
     .stats{
-        height: 400px;
+        height: 360px;
     }
     
     .stat {
@@ -580,7 +580,7 @@ h2 {
 @media (max-width: 960px) {
     .proj{
         margin: 0;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
     .projects {
         flex-direction: column; /* Impila i progetti uno sopra l'altro */
@@ -669,8 +669,11 @@ h2 {
 
 @media (max-width: 960px){
     .faq{
-        border-left: 5px solid purple;
-    border-right: 5px solid purple;
+        border-left: 0px solid purple;
+        border-right: 0px solid purple;
+    }
+    .faq__change{
+        color: purple;
     }
 }
 
