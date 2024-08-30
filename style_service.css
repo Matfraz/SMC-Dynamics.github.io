@@ -623,6 +623,9 @@ p{font-size: 18;line-height: 1.4;}
     .premium-package {
         width: 90%;
     }
+    .pricing-row{
+        display:grid;
+    }
 }
 
 
