@@ -16,9 +16,22 @@
     <img src="logo_def_nob.png" alt="Logo">
     <div class="load__text">SMC Dynamics</div>
 </div>
+
 </head>
 <body id="body">
     
+    <div id="overlay"></div>
+    <div id="cookiePopup">
+        <p>
+            Questo sito web utilizza i cookie per garantire la migliore esperienza di navigazione. I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo quando visiti un sito web. Utilizziamo i cookie per migliorare la funzionalità del sito, per analizzare il traffico e per offrirti contenuti personalizzati. Puoi scegliere di accettare tutti i cookie, oppure di personalizzare le tue preferenze sui cookie.
+            <br><br>
+            Per maggiori informazioni sui cookie che utilizziamo e su come puoi gestirli, consulta la nostra <a href="#" id="openCookieInfo">Informativa sui Cookies</a>.
+        </p>
+        <button id="acceptCookies">Accetto</button>
+        <button id="declineCookies">Rifiuto</button>
+    </div>
+    
+
     <div class="container">
     <header class="header"> 
         <a href="" id="navbar__logo">              <!-- da mettere il main home-->
@@ -47,7 +60,7 @@
     <div class="hero">
         <div class="hero__text color-2">
             <h1>Sogna & Realizza. Con noi, è possibile!</h1>
-            <p>Sogna in grande, costruisci in grande! Realizziamo il sito web dei tuoi sogni, su misura per te.</p>
+            <p>Sogna in grande, costruisci in grande! Realizziamo software su misura per te.</p>
             <a href="" class="button button__z">Scopri di più</a>
         </div>
         <!--<div class="hero__img">
@@ -78,166 +91,118 @@
 
     <section class="why-website">
         <div class="container">
-            <h2>Perché avere un <span class="highlight">sito web </span> ?</h2>
+            <h2>Scopri subito le nostre <span class="highlight">opzioni</span></h2>
             <div class="reasons">
                 <div class="reason">
                     <img src="foto20.png" alt="1">
-                    <h3>Miglior visibilità</h3>
+                    <h3>Siti Web</h3>
                     <p>Avere un sito web ti permette di essere facilmente trovato online da potenziali clienti.</p>
                 </div>
                 <div class="reason">
                     <img src="foto21.png" alt="2">
-                    <h3>Promozione costante</h3>
-                    <p>Un sito web ti consente di promuovere i tuoi servizi o prodotti 24/7, raggiungendo un pubblico più ampio.</p>
+                    <h3>Gestionale</h3>
+                    <p>Avere un gestionale per la tua attività ti permette di osservare e gestire la tua azienda in modo comodo e preciso.</p>
                 </div>
                 <div class="reason">
                     <img src="foto22.png" alt="3">
-                    <h3>Credibilità</h3>
-                    <p>Un sito web professionale aumenta la fiducia dei clienti e ti aiuta a differenziarti dalla concorrenza.</p>
+                    <h3>Gestione Social</h3>
+                    <p>I social sono un nuovo mondo in cui la tua attività non può mancare.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="hero2">
-        <div class="hero2__text">
-            <h2>Statistiche sull'impatto di un sito web</h2>
+  
+
+<div class="project">
+    <button class="prev-btn">&lt;</button> 
+    <button class="next-btn">&gt;</button>
+</div>
+    
+    
+<section id="websites" class="service-section1">
+    <div class="containers">
+        <div class="service-content">
+            <div class="text-container">
+                <h2>Siti Web</h2>
+                <p>La creazione di un sito web è un processo complesso che combina design accattivante, funzionalità avanzate e un'esperienza utente ottimale. Il nostro team si occupa di ogni fase, dalla progettazione iniziale allo sviluppo, fino al lancio e alla manutenzione.</p>
+                <ul>
+                    <li>Design personalizzato per riflettere il tuo brand</li>
+                    <li>Struttura SEO-friendly per migliorare la visibilità online</li>
+                    <li>Responsive design per una navigazione ottimale su tutti i dispositivi</li>
+                </ul>
+                <a href="servizi.html#websites" class="button">Scopri di più</a>
+            </div>
+            <div class="image-container">
+                <img src="foto36.jpg" alt="Siti Web">
+            </div>
         </div>
-    </section>
-    
-    <section class="stats">
-        <div class="stats__container">
-            <div class="stat">
-                <h3>+35%</h3>
-                <p>Aumento delle vendite con un sito</p>
+    </div>
+</section>
+
+<section id="gestionale" class="service-section">
+    <div class="containers">
+        <div class="service-content reverse">
+            <div class="text-container">
+                <h2>Gestionale</h2>
+                <p>Un gestionale su misura ti permette di gestire la tua azienda in modo efficiente, centralizzando tutte le operazioni in un'unica piattaforma intuitiva. Offriamo soluzioni personalizzate per ogni tipo di business, dal magazzino alla contabilità.</p>
+                <ul>
+                    <li>Interfaccia intuitiva per una gestione semplice</li>
+                    <li>Integrazione con sistemi esistenti</li>
+                    <li>Reportistica avanzata per monitorare la performance</li>
+                </ul>
+                <a href="servizi.html#gestionale" class="button">Scopri di più</a>
             </div>
-            <div class="stat">
-                <h3>97%</h3>
-                <p>Dei consumatori controlla il sito web prima di acquistare fisicamente</p>
-            </div>
-            <div class="stat">
-                <h3>+55%</h3>
-                <p>Aumento visibilità della propria attività</p>
+            <div class="image-container">
+                <img src="foto35.jpg" alt="Gestionale">
             </div>
         </div>
-    </section>
-    
-    
-    
-    <section class="business">
-    <div class="business__text"></div>
-    <div class="business__options">
-        <a href="contatti.html" class="business__option" style="background-image: url('foto12.jpg');">
-            <p>Raccontaci della tua attività</p>
-        </a>
-        
-        <a href="index.html#preventivo" class="business__option" style="background-image: url('foto12.jpg');">
-            <p>Richiedi preventivo</p>
-        </a>
-        
-        <a href="contatti.html" class="business__option" style="background-image: url('foto13.jpg');">
-            <p>Contattaci</p>
-        </a>
-        
+    </div>
+</section>
+
+<section id="social-management" class="service-section1">
+    <div class="containers">
+        <div class="service-content">
+            <div class="text-container">
+                <h2>Gestione Social</h2>
+                <p>I social media sono essenziali per connettersi con il pubblico e costruire la tua presenza online. Offriamo servizi di gestione social che comprendono la creazione di contenuti, la gestione delle campagne pubblicitarie, e l'analisi delle performance.</p>
+                <ul>
+                    <li>Piani editoriali personalizzati</li>
+                    <li>Gestione delle campagne pubblicitarie</li>
+                    <li>Monitoraggio e analisi delle performance</li>
+                </ul>
+                <a href="servizi.html#social-management" class="button">Scopri di più</a>
+            </div>
+            <div class="image-container">
+                <img src="foto37.jpg" alt="Gestione Social">
+            </div>
+        </div>
     </div>
 </section>
 
     
-
-<div class="proj">
-    <h3>Qua ci saranno i nostri progetti futuri...magari proprio il <span class="highlight"> tuo</span></h3>
-    <div class="projects">
-        <div class="project">
-            <button class="prev-btn">&lt;</button>
-            <img src="foto24.jpg" alt="Progetto 1">
-            <button class="next-btn">&gt;</button>
-        </div> 
-    <!--    <div class="project">
-                <button class="prev-btn">&lt;</button>
-                <img src="progetto2.jpg" alt="Progetto 2">
-                <button class="next-btn">&gt;</button>
-        </div>
-         Aggiungi più progetti secondo necessità -->
-    </div>
     
-    <div class="proj__2">
-        <div class="proj__descr">
-            <img src="foto24.jpg" alt="Progetto 1">
-            <p>Descrizione del Progetto 1</p>
-        </div>
-        <div class="proj__descr">
-            <img src="foto30.jpg" alt="Progetto 2">
-            <p>Descrizione del Progetto 2</p>
-        </div>
-        <div class="proj__descr">
-            <img src="foto31.jpg" alt="Progetto 3">
-            <p>Descrizione del Progetto 3</p>
+<section class="cta-section">
+    <div class="container">
+        <h2>Pronto a fare il prossimo passo?</h2>
+        <p>Che tu abbia bisogno di un nuovo sito web, un gestionale su misura, o una strategia per i social media, siamo qui per aiutarti. Scopri chi siamo e cosa possiamo fare per te.</p>
+        <div class="cta-buttons">
+            <a href="preventivo.html" class="button primary-btn">Richiedi Preventivo</a>
+            <a href="chi-siamo.html" class="button secondary-btn"><span class="highlight">Scopri chi siamo e i nostri progetti</span></a>
         </div>
     </div>
-</div>    
-
-
-    <section class="faq" id="faq">
-        <div class="faq__container">
-            <h2>Non ancora convinto? Ecco le domandi <span class="faq__change">frequenti</span> </h2>
-            <div class="faq__accordion">
-                <div class="faq__item">
-                    <button class="faq__question" data-active="false" onclick="toggleSection('content1')">Quali sono i metodi di pagamento accettati?</button>
-                    <div class="content" id="content1">
-                        <p>Attualmente accettiamo pagamenti tramite bonifico bancario, carta di credito e PayPal.</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question" data-active="false" onclick="toggleSection('content2')">Qual è il tempo di consegna stimato?</button>
-                    <div class="content" id="content2">
-                        <p>Il tempo di consegna dipende dal tipo di prodotto ordinato e dalla tua posizione. Di solito, le consegne avvengono entro 3-5 giorni lavorativi.</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question" data-active="false" onclick="toggleSection('content3')">Quali sono i vantaggi di scegliere il vostro servizio?</button>
-                    <div class="content" id="content3">
-                        <p>I nostri servizi offrono vantaggi unici, come un team di esperti qualificati, un approccio personalizzato alla progettazione del sito web e un supporto clienti dedicato. Garantiamo anche una solida presenza online per il tuo business.</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question" data-active="false" onclick="toggleSection('content4')">Avete esperienza nel settore?</button>
-                    <div class="content" id="content4">
-                        <p>Sì, abbiamo un'ampia esperienza nel settore della progettazione e sviluppo web. Abbiamo lavorato con una vasta gamma di clienti, dai piccoli imprenditori alle grandi aziende, offrendo soluzioni personalizzate e innovative per le loro esigenze specifiche.</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question" data-active="false" onclick="toggleSection('content5')">Offrite assistenza post-vendita?</button>
-                    <div class="content" id="content5">
-                        <p>Sì, forniamo assistenza post-vendita completa ai nostri clienti. Se hai domande o necessiti di supporto dopo aver acquistato uno dei nostri servizi, il nostro team è sempre disponibile per aiutarti e risolvere qualsiasi problema tu possa incontrare.</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <button class="faq__question" data-active="false" onclick="toggleSection('content6')">Quali sono i vostri orari di lavoro?</button>
-                    <div class="content" id="content6">
-                        <p>I nostri orari di lavoro sono dal lunedì al venerdì, dalle 9:00 alle 18:00. Tuttavia, siamo flessibili e possiamo concordare appuntamenti al di fuori di questi orari su richiesta. Contattaci per ulteriori informazioni.</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    
-
-
-
-
-<section class="quote-request" id="preventivo" style="background-image: url('foto23.jpg');">
-        <div class="container" >
-            <h2>Richiedi un Preventivo Gratuito</h2>
-            <p>Compila il modulo sottostante per ricevere un preventivo personalizzato basato sulle tue esigenze specifiche.</p>
-            <form id="quoteForm" onsubmit="submitQuoteRequest(event)">
-                <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
-                <input type="email" id="email" name="email" placeholder="La tua email" required>
-                <textarea id="details" name="details" placeholder="Descrivi le tue esigenze" required></textarea>
-                <button type="submit">Invia la richiesta</button>
-            </form>
-        </div>
 </section>
+
+
+    
+   
+  
+    
+    
+    
+    
+    
+
 
 
 <div class="pre__footer__container">
@@ -356,18 +321,30 @@ function toggleSection(id) {
 
 
 function submitQuoteRequest(event) {
-    event.preventDefault(); // Previene il refresh della pagina
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var details = document.getElementById('details').value;
+    event.preventDefault();
+    const form = document.getElementById('quoteForm');
+    const formData = new FormData(form);
 
-    console.log('Name:', name); // Simulazione del processamento dei dati
-    console.log('Email:', email);
-    console.log('Details:', details);
+    fetch('/submit-form', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Errore durante l\'invio delle informazioni del modulo.');
+      }
+      return response.text();
+    })
+    .then(data => {
+      console.log(data);
+      alert('Informazioni inviate con successo!');
+    })
+    .catch(error => {
+      console.error(error);
+      alert('Si è verificato un errore durante l\'invio delle informazioni del modulo.');
+    });
+  }
 
-    // Qui puoi aggiungere codice per inviare questi dati a un server o mostrare un messaggio di successo
-    alert("La tua richiesta di preventivo è stata inviata con successo!");
-}
 const reasons = document.querySelectorAll('.reason');
 let index = 0;
 let intervalId; // Variabile per memorizzare l'ID dell'intervallo
@@ -456,8 +433,236 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('chat-icon').addEventListener('click', function() {
+            const chatPopup = document.getElementById('chat-popup');
+            chatPopup.style.display = chatPopup.style.display === 'none' || chatPopup.style.display === '' ? 'block' : 'none';
+        });
+    });
+
+    async function sendMessage() {
+    const inputField = document.getElementById('chat-input');
+    const message = inputField.value.trim();
+    if (!message) return;
+
+    // Visualizza il messaggio dell'utente nella finestra della chat
+    displayMessage('User', message);
+
+    try {
+        // Invia il messaggio al server
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message })
+        });
+
+        // Verifica se la risposta è OK
+        if (!response.ok) {
+            throw new Error('Errore durante la comunicazione con il server.');
+        }
+
+        // Leggi la risposta del server
+        const data = await response.json();
+
+        // Verifica se la risposta contiene dati validi
+        if (data && data.choices && data.choices.length > 0) {
+            const aiMessage = data.choices[0].text.trim();
+            displayMessage('AI', aiMessage);
+        } else {
+            throw new Error('Risposta del server non valida.');
+        }
+        console.log('Response from server:', data);
+    } catch (error) {
+        console.error('Error:', error);
+        displayMessage('AI', "Presto disponibile.");
+    }
+
+    // Pulisci l'input dopo l'invio del messaggio
+    inputField.value = '';
+}
+
+
+// Funzione per visualizzare un messaggio nella finestra della chat
+function displayMessage(sender, message) {
+    const messagesContainer = document.getElementById('chat-popup-messages');
+    const messageElement = document.createElement('div');
+    messageElement.classList.add(sender === 'User' ? 'user-message' : 'ai-message');
+    messageElement.textContent = `${sender}: ${message}`;
+    messagesContainer.appendChild(messageElement);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+
+
+
+
+
+//INIZIO roba per progetti
+const projectImages = [
+    'Pizzapazza.png',
+    'Pizzapazza2.png',
+    'Pizzapazza3.png'
+];
+
+let currentImageIndex = 0;
+
+const projectImg = document.getElementById('project-img');
+const projectLink = document.getElementById('project-link');
+const projectDescription = document.getElementById('project-description');
+
+const prevBtns = document.querySelectorAll('.prev-btn');
+const nextBtns = document.querySelectorAll('.next-btn');
+
+// Aggiungo event listener per il click su tutti i pulsanti "precedente"
+prevBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + projectImages.length) % projectImages.length;
+        updateProject();
+    });
+});
+
+// Aggiungo event listener per il click su tutti i pulsanti "successivo"
+nextBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % projectImages.length;
+        updateProject();
+    });
+});
+
+function updateProject() {
+    projectImg.src = projectImages[currentImageIndex];
+}
+
+// Inizializzazione
+updateProject();
+//fine roba progetti
+
+
+//cookies
+
+document.addEventListener("DOMContentLoaded", function() {
+            const cookiePopup = document.getElementById("cookiePopup");
+            const overlay = document.getElementById("overlay");
+            const acceptButton = document.getElementById("acceptCookies");
+            const declineButton = document.getElementById("declineCookies");
+            const openCookieInfo = document.getElementById("openCookieInfo");
+
+            if (!localStorage.getItem("cookiesAccepted")) {
+                cookiePopup.style.display = "block";
+                overlay.style.display = "block";
+            }
+
+            acceptButton.addEventListener("click", function() {
+                localStorage.setItem("cookiesAccepted", "true");
+                cookiePopup.style.display = "none";
+                overlay.style.display = "none";
+                enableGoogleAnalytics();
+            });
+
+            declineButton.addEventListener("click", function() {
+                localStorage.setItem("cookiesAccepted", "false");
+                cookiePopup.style.display = "none";
+                overlay.style.display = "none";
+            });
+
+            openCookieInfo.addEventListener('click', function(event) {
+                event.preventDefault();
+                showCookieInfo();
+            });
+
+            function showCookieInfo() {
+                // Pop-up per l'informativa sui cookie
+                const infoPopup = document.createElement('div');
+                infoPopup.style.position = 'fixed';
+                infoPopup.style.top = '50%';
+                infoPopup.style.left = '50%';
+                infoPopup.style.transform = 'translate(-50%, -50%)';
+                infoPopup.style.width = '90%';
+                infoPopup.style.maxWidth = '800px';
+                infoPopup.style.backgroundColor = '#fff';
+                infoPopup.style.border = '1px solid #ccc';
+                infoPopup.style.padding = '20px';
+                infoPopup.style.boxShadow = '0 0 15px rgba(0,0,0,0.3)';
+                infoPopup.style.zIndex = '10000';
+                infoPopup.style.overflowY = 'auto';
+                infoPopup.style.maxHeight = '80vh'; /* Limita l'altezza massima del pop-up */
+                infoPopup.innerHTML = `
+                    <button style="
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        background: #eee;
+                        border: none;
+                        padding: 5px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    " id="closeCookieInfo">&times;</button>
+                  <h2>Informativa sui Cookie</h2>
+                    <p>Benvenuto nella nostra Informativa sui Cookie. In questa sezione ti spieghiamo come utilizziamo i cookie analitici e come puoi gestirli.</p>
+
+                    <p><strong>Cosa sono i Cookie Analitici?</strong><br>
+                    I cookie analitici sono file di testo che vengono memorizzati sul tuo dispositivo quando visiti un sito web. Questi cookie aiutano a raccogliere dati su come utilizzi il sito, come le pagine che visiti, il tempo che trascorri su di esse e se riscontri errori. Le informazioni raccolte sono anonime e vengono utilizzate per migliorare il sito web e ottimizzare la tua esperienza di navigazione.</p>
+
+                    <p><strong>Tipi di Cookie Analitici che Utilizziamo e Perché</strong><br>
+                    Utilizziamo cookie analitici per monitorare e analizzare le performance del nostro sito. Ecco alcuni dettagli:</p>
+                    <ul>
+                        <li><strong>Cookie di Google Analytics:</strong> Questi cookie ci aiutano a raccogliere dati anonimi sul traffico del sito e sulle interazioni degli utenti. Utilizziamo queste informazioni per migliorare le funzionalità del sito e per comprendere come i visitatori interagiscono con i contenuti. I dati raccolti ci permettono di identificare tendenze, migliorare le performance e ottimizzare l'esperienza utente.</li>
+                    </ul>
+
+                    <p><strong>Come Gestire i Cookie Analitici</strong><br>
+                    Puoi gestire i cookie analitici tramite le impostazioni del tuo browser. Di seguito trovi le istruzioni per i browser più comuni:</p>
+                    <ul>
+                        <li><strong>Google Chrome:</strong> Vai su Impostazioni &gt; Privacy e sicurezza &gt; Cookie e altri dati dei siti. Da qui puoi visualizzare e gestire i cookie memorizzati, inclusi quelli analitici.</li>
+                        <li><strong>Mozilla Firefox:</strong> Vai su Opzioni &gt; Privacy e sicurezza &gt; Cookie e dati dei siti. Da qui puoi gestire le preferenze sui cookie, inclusi quelli analitici.</li>
+                        <li><strong>Safari:</strong> Vai su Preferenze &gt; Privacy. Qui puoi gestire le impostazioni sui cookie e dati dei siti web, inclusi quelli analitici.</li>
+                        <li><strong>Microsoft Edge:</strong> Vai su Impostazioni &gt; Privacy, ricerca e servizi &gt; Cookie e autorizzazioni del sito. Da qui puoi gestire le impostazioni sui cookie, inclusi quelli analitici.</li>
+                    </ul>
+
+                    <p>Se scegli di disabilitare i cookie analitici, potresti non avere accesso a tutte le funzionalità del sito e la tua esperienza di navigazione potrebbe essere influenzata. Tuttavia, i cookie analitici non influiscono sulla tua privacy in quanto raccolgono solo dati anonimi.</p>
+                    `;
+                document.body.appendChild(infoPopup);
+                document.getElementById('closeCookieInfo').addEventListener('click', function() {
+                    document.body.removeChild(infoPopup);
+                });
+            }
+
+            function enableGoogleAnalytics() {
+                var script = document.createElement('script');
+                script.src = "https://www.googletagmanager.com/gtag/js?id=G-7Z0568JX2T";
+                script.async = true;
+                document.head.appendChild(script);
+                script.onload = function() {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-7Z0568JX2T');
+                };
+            }
+
+            if (localStorage.getItem("cookiesAccepted") === "true") {
+                enableGoogleAnalytics();
+            }
+        });
+
+
+
 
 </script>
+
+<div id="chat-icon">💬</div>
+
+<div id="chat-popup">
+  <div id="chat-popup-header">Chat with AI</div>
+  <div id="chat-popup-messages"></div>
+  <div id="chat-popup-input">
+    <input type="text" id="chat-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+
 
 </body>
 <footer class="site-footer">
@@ -485,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.instagram.com/smc.dynamics?igsh=b3Fka3kwNzBlcWk%3D&utm_source=qr">Instagram</a></li>
                 <li><a href="#">LinkedIn</a></li>
             </ul>
         </div>
