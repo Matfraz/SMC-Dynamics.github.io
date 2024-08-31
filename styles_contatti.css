@@ -267,6 +267,94 @@ p{font-size: 18;line-height: 1.4;}
 
 
 
+/* Sezione Contatti */
+.contact__section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact__details,
+.contact__preferences {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact__details h3,
+.contact__preferences h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact__details ul,
+.contact__preferences ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact__details li,
+.contact__preferences li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact__link {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact__link:hover {
+    text-decoration: underline;
+}
+
+.contact__phone {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact__email-info {
+    font-size: 14px;
+    color: #888;
+}
+
+
+.contacth2{
+    font-size: 35px;
+}
+
+.highlight {
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
 .altro__container{
     background: whitesmoke;
     padding: 4% 0 2% 0;

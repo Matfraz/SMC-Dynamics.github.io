@@ -152,3 +152,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Inizializzazione
     updateProject();
 });
+
+
+//leggi di più
+function toggleText(button) {
+    var description = button.previousElementSibling;
+    description.classList.toggle('expanded');
+    if (description.classList.contains('expanded')) {
+        button.textContent = "Leggi di meno";
+    } else {
+        button.textContent = "Leggi di più";
+    }
+}

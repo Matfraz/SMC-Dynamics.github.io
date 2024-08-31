@@ -316,87 +316,121 @@ p{font-size: 18;line-height: 1.4;}
 
 
 
-/* Stile della sezione Presentazione del Team */
-.team__section {
-    background-color: #fff;
-    background-size: cover;
-    background-position: center;
-    padding: 80px 0; /* Aumentato il padding verticale */
+/* Stile principale della sezione futuristica */
+.team__section-futuristic {
+    background: white;
+    padding: 100px 0;
+    color: #e0e0ff;
     text-align: center;
-    color: #000;
+    overflow: hidden;
+    position: relative;
 }
 
-
-/* Stile del contenitore del team */
-.team__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.team__container h2 {
-    padding: 10px 0 30px 0; /* Aggiunto margine superiore negativo */
-    font-size: 40px;
-
-    background-image: linear-gradient(
-        to right,
-         #c31641 0%, 
-         #a40d3a 21%,
-         #741056 52%,
-         #550d5f 78%,
-         #410c74 100%
-    );
+/* Stile del testo principale con effetto glow */
+.glowing-text {
+    font-size: 50px;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 40%, #550d5f 100%, #550d5f 10%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    max-width: 100%;
+    margin-bottom: 8%;
 }
 
+/* Contenitore futuristico per i membri del team */
+.team__container-futuristic {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
 
-/* Stile della griglia per i membri del team */
-.team__grid {
+/* Griglia futuristica per desktop */
+.team__grid-futuristic {
     display: flex;
-    justify-content: center;
-    gap: 40px; /* Spazio tra i riquadri */
-    margin-top: 40px;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 50px;
 }
 
-/* Stile del riquadro del membro del team */
-.team__member {
-    padding: 40px; /* Spazio interno */
-    border-radius: 10px; /* Bordi arrotondati */
-    flex: 1; /* Rendere i riquadri flessibili */
-    border: 2px solid #410c74; /* Bordo nero */
-    transition: all 0.3s ease; /* Transizione fluida */
-    background-color: #fff;
+/* Stile per ogni membro del team */
+.team__member-futuristic {
+    background-image: linear-gradient(to top, #ff0844 40%, #550d5f 100%, #550d5f 10%);
+    border: 2px solid #a29bfe;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px #8e44ad, 0 0 30px #7610c4, 0 0 40px #5b0e9b;
 }
 
-/* Effetto di transizione per lo sfondo al passaggio del mouse */
-.team__member:hover {
-    background-color: #fff; /* Sfondo più chiaro al passaggio del mouse */
-    transform: scale(1.05); /* Ingrandimento al passaggio del mouse */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombra al passaggio del mouse */
+/* Effetto hover per i membri */
+.team__member-futuristic:hover {
+    transform: translateY(-20px) scale(1.1);
+    box-shadow: 0 0 30px #ffffff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
 }
 
-
-/* Stile per gli elementi h3 all'interno dei riquadri */
-.team__member h3 {
-    font-size: 22px;
-    margin-bottom: 20px; /* Margine inferiore */
-    color: #000; /* Colore del testo nero */
+/* Stile per i titoli */
+.team__member-futuristic h3 {
+    font-size: 28px;
+    color: #e0e0ff;
+    margin-bottom: 20px;
 }
 
-/* Stile per i paragrafi all'interno dei riquadri */
-.team__member p {
-    font-size: 18px; /* Dimensione del testo */
-    color: #5a5959; /* Colore del testo nero */
-    text-align:center;
+/* Stile per i paragrafi */
+.team__member-futuristic p {
+    font-size: 18px;
+    color: #dcdcdc;
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
-.team__member p:hover {
-    color:#000;
-    transition: all 0.3s ease;
+.team__member-futuristic p.expanded {
+    max-height: 500px; /* Sufficientemente grande da mostrare tutto il testo */
+}
+
+/* Stile del pulsante "Leggi di più" */
+.read-more-btn {
+    background-color: #550d5f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ff0844;
+}
+
+/* Layout mobile */
+@media (max-width: 768px) {
+    .team__grid-futuristic {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team__member-futuristic {
+        padding: 20px;
+    }
+
+    .team__member-futuristic p {
+        max-height: 60px;
+        overflow: hidden;
+    }
+
+    .team__member-futuristic p.expanded {
+        max-height: 500px;
+    }
 }
 
 
